@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta charset="utf-8"/>
+
+		<title>Google 3D Tiles Example</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			html {
+				overflow: hidden;
+				font-family: Arial, Helvetica, sans-serif;
+				user-select: none;
+			}
+
+			canvas {
+				image-rendering: pixelated;
+				outline: none;
+			}
+
+			#info {
+				position: absolute;
+				top: 0;
+				left: 0;
+				color: white;
+				width: 100%;
+				text-align: center;
+				padding: 5px;
+				pointer-events: none;
+				line-height: 1.5em;
+			}
+
+			#info a {
+				color: white;
+				pointer-events: all;
+			}
+
+			#credits {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				color: white;
+				font-size: 12px;
+				opacity: 0.5;
+				padding: 5px;
+				line-height: 1.25em;
+			}
+        </style>
+      <script type="module" crossorigin src="./assets/googleMapsAerial-CIHK5I2Q.js"></script>
+      <link rel="modulepreload" crossorigin href="./assets/three.module-CrM3Sdgj.js">
+      <link rel="modulepreload" crossorigin href="./assets/GLTFLoader-Cxf5qH03.js">
+      <link rel="modulepreload" crossorigin href="./assets/DRACOLoader-D_9vCzO5.js">
+      <link rel="modulepreload" crossorigin href="./assets/lil-gui.module.min-CY0tDdoZ.js">
+      <link rel="modulepreload" crossorigin href="./assets/readMagicBytes-Da5ueiou.js">
+      <link rel="modulepreload" crossorigin href="./assets/LoaderBase-CVSPpjX2.js">
+      <link rel="modulepreload" crossorigin href="./assets/B3DMLoader-D1LcxfV7.js">
+      <link rel="modulepreload" crossorigin href="./assets/PNTSLoader-BKmvYx0Z.js">
+      <link rel="modulepreload" crossorigin href="./assets/I3DMLoader-D1OZbdkw.js">
+      <link rel="modulepreload" crossorigin href="./assets/CMPTLoader-DdKYITCk.js">
+      <link rel="modulepreload" crossorigin href="./assets/GLTFExtensionLoader-DSFKy8u9.js">
+      <link rel="modulepreload" crossorigin href="./assets/TilesRenderer-BbBk1kdB.js">
+      <link rel="modulepreload" crossorigin href="./assets/TileCompressionPlugin-ClKF7vur.js">
+      <link rel="modulepreload" crossorigin href="./assets/TilesFadePlugin--RsjXkIU.js">
+      <link rel="modulepreload" crossorigin href="./assets/GoogleCloudAuthPlugin-CaZ2oYLb.js">
+    </head>
+    <body>
+		<div id="info">
+			<div>
+				Example using <a href="https://cloud.google.com/blog/products/maps-platform/create-immersive-3d-map-experiences-photorealistic-3d-tiles">Googles Photorealistic 3D Tiles</a> - Tokyo Tower
+				<br/>
+				Google Cloud Tiles API key required
+			</div>
+		</div>
+		<div id="credits">
+		</div>
+    </body>
+</html>
